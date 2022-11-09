@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +14,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.header{
+  position: fixed;
+  width: 65%;
+  top: 0;
+}
+.footer{
+  position: fixed;
+    width: 65%;
+    bottom: 0;
+}
+.search-input{
+  width: 40vw;
+}
+@media only screen and (max-width: 768px) {
+  .lgIcons {
+    display: none;
+  }
+    .header,.footer {
+      width: 97%;
+    }
+}
+
+/* .inboxContainer{
+  width: 50%;
+  margin: auto;
+} */
